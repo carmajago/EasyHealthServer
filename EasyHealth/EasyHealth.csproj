@@ -249,6 +249,10 @@
     <Compile Include="Migrations\201810100011029_mg23.Designer.cs">
       <DependentUpon>201810100011029_mg23.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810100055170_mgAgenda.cs" />
+    <Compile Include="Migrations\201810100055170_mgAgenda.Designer.cs">
+      <DependentUpon>201810100055170_mgAgenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -362,6 +366,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201810100011029_mg23.resx">
       <DependentUpon>201810100011029_mg23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810100055170_mgAgenda.resx">
+      <DependentUpon>201810100055170_mgAgenda.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

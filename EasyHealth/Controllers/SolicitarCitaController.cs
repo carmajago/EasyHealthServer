@@ -13,9 +13,17 @@ namespace EasyHealth.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        public async Task<IHttpActionResult> PostCita()
+        public async Task<IHttpActionResult> PostCita(Cita cita)
         {
-            return Ok();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            db.Citas.Add(cita);
+            await db.SaveChangesAsync();
+
+            return CreatedAtRoute("DefaultApi", new { id = cita.Id }, cita);
         }
         
     }

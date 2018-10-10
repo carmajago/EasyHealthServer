@@ -33,6 +33,8 @@ namespace EasyHealth.Models
 
         public string Celular { get; set; }
 
+        [JsonIgnore]
+        public List<Dia> Agenda { get; set; }
 
     }
 }
