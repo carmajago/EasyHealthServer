@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -19,6 +20,7 @@ namespace EasyHealth.Models
         [ForeignKey("Medico")]
         public string MedicoFk { get; set; }
 
+        [JsonIgnore]
         public Medico Medico { get; set; }
     }
 }

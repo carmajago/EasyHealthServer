@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using EasyHealth.Models;
 using Microsoft.AspNet.Identity;
@@ -15,6 +16,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace EasyHealth.Controllers
 {
+    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
     public class AfiliadosController : ApiController
     {
         private ApplicationDbContext db = new ApplicationDbContext();

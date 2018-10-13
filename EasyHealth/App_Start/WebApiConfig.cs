@@ -12,6 +12,8 @@ namespace EasyHealth
     {
         public static void Register(HttpConfiguration config)
         {
+
+            config.EnableCors();
             // Configuración y servicios de Web API
             // Configure Web API para usar solo la autenticación de token de portador.
             config.SuppressDefaultHostAuthentication();

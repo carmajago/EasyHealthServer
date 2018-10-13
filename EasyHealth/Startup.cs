@@ -18,6 +18,8 @@ namespace EasyHealth
             ConfigureAuth(app);
             CreateRolesandUsers();
         }
+
+
         public void CreateRolesandUsers()
         {
             ApplicationDbContext db = new ApplicationDbContext();
